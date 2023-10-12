@@ -12,9 +12,6 @@ module Unidecode
     function unidecode(x)
         decode_emoji(decode_latex(x))
     end
-    function unidecode(x)
-        decode_emoji(decode_latex(x))
-    end
     function unidecode(x::Symbol)
         decode_emoji(decode_latex(string(x)))
     end
